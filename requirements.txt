@@ -1,0 +1,24 @@
+# Python dependencies for the notebooks.
+# Python 3.9+ recommended.
+
+# --- core (all notebooks) ---
+numpy
+pandas
+scipy
+matplotlib
+statsmodels
+tqdm
+
+# --- Non Adaptive Mini.ipynb (synthetic IID/shift experiments) ---
+scikit-learn
+xgboost
+
+# --- Two Stage Stocks.ipynb (NBEATS stage-1 forecaster) ---
+# Heavy: pulls in PyTorch. Only needed for the stocks notebook.
+darts
+
+# --- DtACI method (the `dtaci` helper in adaptive_conformal.py) ---
+# Requires a working R installation in addition to this Python package, plus
+# the R scripts in DtACI-main/ (AgACI.R, DtACI.R). rpy2 is imported lazily, so
+# notebooks that don't call dtaci run without R/rpy2 installed.
+rpy2
